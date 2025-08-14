@@ -1,1 +1,1 @@
-# Scholarbase
+# ScholarBase

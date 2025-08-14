@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body,html{
+    overflow: visible;
+}
+h1{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    background-color: #094365;
+    padding-left: 20px;
+}
+label{
+    color: white;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.data{
+    width: 500px;
+    text-align: center;
+    margin-left: 0.5vw;
+    padding: 2vh;
+    border-radius: 1vw;
+    border: 1px solid rgb(93, 92, 92);
+}
+
+button{
+    padding: 1vw;
+    max-width: 15vw;
+    background-color: aqua;
+    border: 1px solid blue;
+    border-radius: 4vw;
+    text-align: start;
+
+}
+#button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.submit{
+    margin-top: 10px;
+    padding: 1vw;
+    width: 150px;
+    text-align: center;
+    background-color: rgb(0, 255, 72);
+}
+
+.sub-tit{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 10px 2px 10px;
+    color: white;
+    margin-top: 1.5vh;
+}
+#sub-desc{
+    text-align: center;
+    width: 500px;
+}
+.sub-data{
+    width: 500px;;
+    margin-left: 0.5vw;
+    padding: 1.25vh;
+    text-align: center;
+    border-radius: 1vw;
+    border: 1px solid rgb(93, 92, 92);
+    margin-bottom: 1vh;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.subsection-wrapper {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 1vw;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.subsection-wrapper label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.subsection-wrapper input,
+.subsection-wrapper textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#create-form{
+    text-align: center;
+    background-color: #0e0a29;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5);   
+    max-width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.cont-area {
+    width: 500px;
+    min-height: 80px;
+    margin-left: 0.5vw;
+    padding: 1.25vh;
+    border-radius: 1vw;
+    border: 1px solid rgb(93, 92, 92);
+    margin-bottom: 2vh;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: vertical;
+}
+
+.text-section, .img-section, .video-section {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    background-color: #e0f7fa;
+    color: black;
+    border-radius: 2vw;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.text-section:hover, .img-section:hover, .video-section:hover {
+    background-color: #b2ebf2;
+    color: #00363a;
+    transform: scale(1.1);
+}
+
+#Title, #Unit {
+    margin-bottom: 1vh;
+}
+
+#create-form > * {
+    margin-bottom: 0.5vh;
+}
+
+/* Style for dynamically added sections */
+.Section {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 1vw;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    background-color: #e0f7fa;
+    color: black;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.Section label,
+.sub-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #0e0a29;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Section input.sub-tit,
+.Section input.sub-content,
+.Section textarea.sub-content {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+.Section textarea.sub-content {
+    min-height: 80px;
+    resize: vertical;
+}

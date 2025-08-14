@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarBase</title>
+    <link rel="stylesheet" href="landing.css">
+    <script type="module" src="landing.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="Logo"><img src="ChatGPT Image Jun 18, 2025, 09_54_05 PM.png" alt="The logo and project name goes here" class="Logo-img"></a>
+        <ul class="header-links">
+            <li class="header-links-ele" id="resc">Resources 
+                <ul>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Maths</li>
+                    <li>Computer Science</li>
+                </ul>
+            </li>
+            <li class="header-links-ele">Sign up</li>
+            <li class="header-links-ele">Login</li>
+        </ul>
+    </div>
+    <div class="Hero">
+    <div class="slide-rack">
+        <section class="slide1">
+        <p class="hero-text">A World of Knowledge, Made Together</p>
+        <p class="hero-subtext">Dive into thousands of articles, written and edited by curious minds like yours. Discover, learn, and contribute to a growing base of human knowledge.</p>
+        <section>
+            <button class="explore">Explore articles</button>
+            <a href="./create.html"><button class="write">Start writing</button></a>
+        </section>
+        <img src="image.png" class="hero-img">
+        </section>
+        <section class="slide2">
+            <p class="hero-text">Share Your Knowledge With The World</p>
+            <p class="hero-subtext">Join our community of scholars and start writing your own articles today.</p>
+            <img src="image-removebg-preview.png" alt="hero-img" class="hero-img">
+        </section>
+        </div>
+        <section class="nav">
+            <button class="nav-button" data-slide="1"></button>
+            <button class="nav-button" data-slide="2"></button>
+        </section>
+    </div>
+    <div class="pop-up">
+    <p id="popup-title">Log In</p>
+    <button class="close-button">×</button>
+    <section class="popup-content">
+        <div id="message" class="message"></div>
+        Enter Email
+        <input placeholder="example@email.com" id="email" type="email">
+        <br>
+        Enter Password
+        <input placeholder="Password" id="password" type="password">
+        <div class="popup-buttons">
+            <button class="login" onclick="signIn()">Login</button>
+            <button class="signup" onclick="signUp()">Sign Up</button>
+        </div>
+    </section>
+</div>
+    <div class="cards">
+        <a href="subjectpage.html?subject=Physics">
+        <div class="card"><img src="Physics.png" class="card-img">
+            <p>Physics</p></div>
+        </a>
+            <div class="card">
+            <a href="subjectpage.html?subject=Chemistry">
+            <img src="chem.png" class="card-img">
+            <p>
+            Chemistry
+            </p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="subjectpage.html?subject=maths">
+            <img src="maths.png" class="card-img" alt="">
+            <p>
+            Maths
+            </p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="subjectpage.html?subject=computer">
+            <img src="comp3.png" class="card-img">
+            <p>Computer</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="subjectpage.html?subject=electronics">
+            <img src="Electronics.png" class="card-img" alt="">
+            <p>Electronics</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="subjectpage.html?subject=gk">
+            <img src="gk.png" class="card-img" alt="">
+            <p>GK</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="subjectpage.html?subject=misc">
+            <img src="misc.png" class="card-img" alt="">
+            <p>Miscelleous</p>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class = "footer-top">
+        <div class="footer-lead">
+            <img src="ChatGPT Image Jun 18, 2025, 09_54_05 PM.png" style="width: 15vw;">
+            <p>A platform to learn and share with the world</p>
+        </div>
+        <figure>
+            <figcaption>Explore</figcaption>
+        <ul  class="footer-ul">
+
+            <li>Articles</li>
+            <li>Categories</li>
+            <li>Search</li>
+        </ul>
+        </figure>
+        
+        <figure>
+            <figcaption>
+                Community
+            </figcaption><ul class="footer-ul">
+            <li>About us</li>
+            <li>Write for us</li>
+            <li>Contact</li>
+        </ul>
+        </figure>
+        <figure>
+            <figcaption>Legal</figcaption>
+        <ul  class="footer-ul">
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+        </ul>
+        </figure>
+        </div>
+        <hr>
+        <div class="footer-tail">
+            <p> ©ScholarBase 2025. All rights reserved. </p>
+        </div>
+    </div>
+     <script type="module" src="./firebase-config.js"></script>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>

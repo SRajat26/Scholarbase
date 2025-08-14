@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an article</title>
+    <link rel="stylesheet" href="./create.css">
+</head>
+<body>
+    <h1>Create an article</h1>
+    <div id="create-form">
+        <label for="Title">Article Title</label>
+        <input name="Title" id="Title" placeholder="Chapter Name" class="data" >
+        <label name="Subject" for="Subject">Subject: </label>
+        <select name="Subject" id="Subject" class="data">
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Maths">Mathematics</option>
+            <option value="Electronics">Electronics</option>
+            <option value="CS">Computer Science</option>
+        </select>
+        <label for="Unit">Unit Name</label>
+        <input name="Unit" id="Unit" placeholder="Unit Name" class="data" >
+        <div id="content-area">
+        </div>
+        <div id="button-group">
+        <button class="text-section" onclick="genTextSect()">⟪+⟫ Add a text section</button>
+        <button class="img-section" onclick="genImgSect()">⟪+⟫ Add an image section</button>
+        <button class="video-section" onclick="genVidSect()">⟪+⟫ Add a video section</button>
+        </div>
+        <button type="submit" class="submit">Submit</button>
+    <!-- </form> -->
+    </div>
+    <script type="module" src="create.js"></script>
+    <script src="create-gen.js"></script>
+</body>
+</html>
